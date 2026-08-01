@@ -19,6 +19,7 @@
   installShellFiles,
   lowdown,
   stdenv,
+  udev,
   # updateScript dependencies (passthru only; not used by the build itself).
   writeShellApplication,
   curl,
@@ -157,6 +158,7 @@ rustPlatform.buildRustPackage {
     dpkg
     python3
     lowdown
+    udev
   ];
 
   buildInputs = [
